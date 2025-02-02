@@ -15,7 +15,7 @@ import numpy as np
 with open('model_prediksi.pkl', 'rb') as file:
     model = pickle.load(file)
 
-st.title("Prediksi Hasil Produksi Padi Provinsi Jawa Tengah", color='red')  # Mengganti judul
+st.title("Prediksi Hasil Produksi Padi Provinsi Jawa Tengah")  # Mengganti judul
 
 # Informasi Akurasi Model
 st.markdown("**Model ini memiliki akurasi sebesar 98,0% dalam memprediksi hasil produksi padi.**")
