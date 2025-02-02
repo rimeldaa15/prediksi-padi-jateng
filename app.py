@@ -15,10 +15,10 @@ import numpy as np
 with open('model_prediksi.pkl', 'rb') as file:
     model = pickle.load(file)
 
-st.title("Prediksi Hasil Produksi Padi Provinsi Jawa Tengah")  # Mengganti judul
+st.title("Prediksi Hasil Produksi Padi Provinsi Jawa Tengah", color='red')  # Mengganti judul
 
 # Informasi Akurasi Model
-st.markdown("**Model ini memiliki akurasi sebesar 94,54% dalam memprediksi hasil produksi padi.**")
+st.markdown("**Model ini memiliki akurasi sebesar 98,0% dalam memprediksi hasil produksi padi.**")
 
 # Luas Tanam dengan batasan minimal dan maksimal, dan satuan hektar
 Luas_Tanam = st.number_input("Luas Tanam (Ha) (min: 0, maks: 1000000) ", min_value=0.0, max_value=1000000.0, format="%.2f")
