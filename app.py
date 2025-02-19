@@ -18,7 +18,7 @@ with open('model_prediksi.pkl', 'rb') as file:
 st.title("Prediksi Hasil Produksi Padi Provinsi Jawa Tengah")  # Mengganti judul
 
 # Informasi Akurasi Model
-st.markdown("**Berisi 3 Variabel yaitu Luas Tanam (Hektare), Luas Panen (Hektare), dan Produktivitas (Kuintal/Hektare).**")
+st.markdown("**Terdiri dari 3 Variabel yaitu Luas Tanam (Hektare), Luas Panen (Hektare), dan Produktivitas (Kuintal/Hektare).**")
 
 # Luas Tanam dengan batasan minimal dan maksimal, dan satuan hektar
 Luas_Tanam = st.number_input("Luas Tanam (Ha) (min: 0, maks: 1000000) ", min_value=0.0, max_value=1000000.0, format="%.2f")
